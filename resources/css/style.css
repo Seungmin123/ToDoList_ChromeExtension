@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+body{
+	display : flex;
+	align-items : center; /* 요소 대한민국 10도씨 위아래 가운데정렬*/
+	justify-content : center; /* 요소 좌우 중에 가운데 정렬 */
+	background-size : cover;
+	background-position : center center;
+	color : white;
+	min-height : 100vh; /* body 전체 요소 화면 가운데 배치됨. */
+	
+}
+
+.clock *{
+	font-size : 2vw;
+	text-align : center;
+	
+}
+
+input{
+	font-size : 2vw;
+	border : 0 none;
+	border-radius: 2vw;
+	width : 40vw;
+	padding : 1vw 1vw; /* 내용물은 그대로 두고 몸통 사이즈만 키움 */
+	outline : none;
+}
+
+.center{
+	display : flex;
+	align-items : center;
+	flex-direction : column; /* 세로로 수평정렬 */	
+	padding : 2vw 5vw;
+	background-color : rgba(0,0,0,0.3);
+}
+
+.center .inp_name{
+	background : none;
+	border : 0 none;
+	color : white;
+	font-size : 4vw;
+	border-bottom : 3px solid rgba(255,255,255,0.8);
+	margin-bottom : 20px;
+	
+
+}
+
+.inp_name::placeholder{
+	color : white;
+}
+
+.name{
+	font-size : 5vw;
+	margin-bottom : 30px;
+	
+}
+
+.name-text{
+	
+	font-size : 2vw;
+}
+
+.to-do_add{
+	margin-bottom : 1.5vw;
+}
+
+.to-do{
+	font-size : 1.5vw;
+	line-height: 1.5;
+}
+
+
+
+
+
+
+.location{
+	opacity : 0.7;
+	font-style : italic;
+	font-size : 2vw;
+	position : absolute; /* 좌하단에 박아버릴라고 absolute */
+	left : 2vw;
+	bottom : 2vw;
+}
+
+.location:hover{ /* 마우스를 올리면 */
+	opacity : 1; /* 투명도 제거 */
+}
+
+.weather{
+	position : absolute;
+	font-style : italic;
+	font-size : 2vw;
+	right : 2vw;
+	top : 2vw;
+}
